@@ -1,7 +1,5 @@
 package org.zxz.linkedList;
 
-import java.util.List;
-
 /**
  * @author LEGION
  */
