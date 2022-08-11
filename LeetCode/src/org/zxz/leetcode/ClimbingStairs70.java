@@ -1,5 +1,8 @@
 package org.zxz.leetcode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author LEGION
  * 70. 爬楼梯
@@ -69,5 +72,25 @@ public class ClimbingStairs70 {
             second = third;
         }
         return third;
+    }
+
+    /**
+     * HashMap
+     *
+     * @param n
+     * @return
+     */
+    public int climbStairsHashMap(int n) {
+        if (n <= N) {
+            return n;
+        }
+        Map<Integer, Integer> map = new HashMap<>();
+        if (null != map.get(n)) {
+            return map.get(n);
+        } else {
+            int result = climbStairsHashMap(n - 1) + climbStairsHashMap(n - 2);
+            map.put(n, result);
+            return result;
+        }
     }
 }
