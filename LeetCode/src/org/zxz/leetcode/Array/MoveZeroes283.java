@@ -1,4 +1,4 @@
-package org.zxz.leetcode;
+package org.zxz.leetcode.Array;
 
 /**
  * @author LEGION

@@ -1,4 +1,4 @@
-package org.zxz.leetcode;
+package org.zxz.leetcode.Array;
 
 import java.util.ArrayList;
 import java.util.HashSet;
