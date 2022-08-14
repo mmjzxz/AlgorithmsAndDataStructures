@@ -4,10 +4,6 @@ package org.zxz.KMP;
  * @author LEGION
  */
 public class KMP {
-    public static void main(String[] args) {
-
-    }
-
     public static int getIndexOf(String source, String target) {
         if (source == null || target == null || target.length() < 1 || source.length() < target.length()) {
             return -1;
